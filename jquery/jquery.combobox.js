@@ -65,12 +65,13 @@
 				})
 				.addClass( "ui-widget ui-widget-content ui-corner-left" );
 
-			input.data( "autocomplete" )._renderItem = function( ul, item ) {
-				return $( "<li></li>" )
-					.data( "item.autocomplete", item )
-					.append( "<a>" + item.label + "</a>" )
-					.appendTo( ul );
-			};
+			//dy fix
+			input.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+				  return $( "<li>" )
+				    .data( "ui-autocomplete-item", item )
+				    .append( "<a>" + item.label + "<br>" + item.desc + "</a>" )
+				    .appendTo( ul );
+				};
 
 			$( "<a>" )
 				.attr( "tabIndex", -1 )

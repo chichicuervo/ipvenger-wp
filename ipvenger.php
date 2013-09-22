@@ -281,7 +281,7 @@ function ipv_enqueue_scripts( $hook ) {
 
 	switch( $hook ) {
 		case 'toplevel_page_ipvenger/ipvenger':
-			wp_enqueue_script( 'ipv-blockui-script' );
+			//wp_enqueue_script( 'ipv-blockui-script' );
 			break;
 
 		case 'ipvenger_page_ipvenger/ipvenger__analytics':

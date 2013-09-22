@@ -428,7 +428,7 @@
 	
 		});
 
-		jQuery( "#ipv-country-blacklist-mask" ).combobox();
+		//jQuery( "#ipv-country-blacklist-mask" ).combobox();
 
 		var countries = ipv_country_names();
 

@@ -12,6 +12,12 @@
 require_once( dirname( __FILE__ ) .  '/../cms-includes/ipv_db_utils.php' );
 require_once( 'ipv_matches_mask.php' );
 
+//dy fix
+if(!defined('IPV_GLOBAL_SETTINGS')){
+	global $table_prefix;
+	define( 'IPV_GLOBAL_SETTINGS', 	$table_prefix . 'ipv_global_settings' );	
+}
+
 /**
  * function ipv_time_ago - convert a unix timestamp into e.g. "xx hours ago"
  *

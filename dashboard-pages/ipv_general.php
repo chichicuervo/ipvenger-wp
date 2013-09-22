@@ -15,6 +15,8 @@
 		'/ipv_api_key.php' );
 
 	$api_is_valid = ipv_api_keymaster( $ipv_api_key );
+	
+	echo "<script src='" . $GLOBALS['ipv_jquery_home'] . "/jquery.blockUI.js' type='text/javascript'></script>";
 
 ?>
 
